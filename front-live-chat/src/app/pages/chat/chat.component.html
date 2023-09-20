@@ -1,0 +1,35 @@
+<main>
+    <div class="loading-img" *ngIf="!liveChatOn">
+        <img src="../../../assets/img/loading.gif">
+    </div>
+
+    <div #messagesContainer class="messages-container" *ngIf="liveChatOn">
+        <div class="message" *ngFor="let message of chatMessages"
+            [class.right-side-message]="message.type === messageTypeEnumRef.CurrentUserMessage"
+            [class.center-side-message]="message.type === messageTypeEnumRef.ChatActions">
+
+            <div class="message-content"
+                [class.message-content-right-side]="message.type === messageTypeEnumRef.CurrentUserMessage"
+                [class.action-message]="message.type === messageTypeEnumRef.ChatActions">
+                <p> {{ message.content }} </p>
+            </div>
+            <p class="user-name" *ngIf="message.type !== messageTypeEnumRef.ChatActions"
+                [class.user-name-right-side]="message.type === messageTypeEnumRef.CurrentUserMessage">
+                {{ message.userName }}
+            </p>
+        </div>
+    </div>
+
+    <div class="new-message-container" *ngIf="liveChatOn">
+        <div class="leave-chat-btn" (click)="leaveChatAsync()">
+            <fa-icon [icon]="leaveChatIcon"></fa-icon>
+        </div>
+        <textarea class="new-message-field" #newMessageInput placeholder="Escreva uma mensagem . . ."
+            (keyup.enter)="sendNewMessage(newMessageInput)">
+        </textarea>
+        <div class="send-new-message-btn" (click)="sendNewMessage(newMessageInput)">
+            <fa-icon [icon]="sendMessageIcon"></fa-icon>
+        </div>
+    </div>
+
+</main>

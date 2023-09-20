@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackLiveChatAPI", "BackLiveChatAPI.csproj", "{2F0E11B3-21FF-401D-A30E-782AA46BF581}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F0E11B3-21FF-401D-A30E-782AA46BF581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0E11B3-21FF-401D-A30E-782AA46BF581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0E11B3-21FF-401D-A30E-782AA46BF581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0E11B3-21FF-401D-A30E-782AA46BF581}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B53A1664-7363-4A7B-A21C-DAF6EB8331B1}
+	EndGlobalSection
+EndGlobal
